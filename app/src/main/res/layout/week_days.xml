@@ -1,49 +1,233 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="60dp">
+    android:layout_width="match_parent" android:layout_height="940dp"
+    android:layout_marginTop="60dp">
 
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1000"
-        android:background="@color/greenSber"/>
+        android:layout_height="2dp"
+         android:layout_below="@id/editTextState"
+        android:background="@drawable/shape_borders"/>
+    <?xml version="1.0" encoding="utf-8"?>
+
 
     <ImageView
+        android:id="@+id/sberSmile"
         android:layout_height="50dp"
-        android:layout_width="40dp"
-        android:src="@drawable/arrow"
+        android:layout_width="50dp"
+        android:src="@drawable/sber"
         android:clickable="true"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
         />
     <TextView
-        android:id="@+id/editTextDistance"
+        android:id="@+id/editTextStateLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/sberSmile"
+        android:layout_marginTop="5dp"
         android:textSize="10sp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_margin="10dp"
-        android:textColor="@android:color/white"
-        android:text="@string/additionalOfficeDistanceTo"/>
+        android:text="Состояние"/>
+    <TextView
+        android:id="@+id/editTextState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/sberSmile"
+        android:layout_below="@id/editTextStateLabel"
+        android:textSize="18sp"
+        android:text="Работает"/>
+    <ImageView
+        android:id="@+id/sberWatch"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:layout_below="@id/editTextState"
+        android:src="@drawable/sber"
+        android:clickable="true"
+        android:layout_alignParentLeft="true"
+        />
+
+
 
     <TextView
-        android:id="@+id/editTextRelative1"
+        android:id="@+id/editTextMonday"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/sberWatch"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/editTextState"
         android:textSize="18sp"
         android:layout_margin="10dp"
-        android:textColor="@android:color/white"
-        android:text="@string/additionalOfficeLocation"/>
+        android:text="Понедельник"/>
     <TextView
-        android:id="@+id/editText2"
+        android:id="@+id/editTextMondayTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/additionalOfficeName"
-        android:layout_below="@id/editTextRelative1"
-        android:layout_marginLeft="10dp"
-        android:textColor="@android:color/white"
-        android:layout_marginTop="-10dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/editTextState"
+        android:textSize="18sp"
+        android:text="10:00-19:00"
+        android:layout_margin="10dp"/>
 
-        android:textSize="10sp" />
+
+
+    <TextView
+        android:id="@+id/editTextTuesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/sberWatch"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/editTextMondayTime"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:text="Вторник"/>
+    <TextView
+        android:id="@+id/editTextTuesdayTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/editTextMondayTime"
+        android:textSize="18sp"
+        android:text="10:00-19:00"
+        android:layout_margin="10dp"/>
+
+
+
+    <TextView
+        android:id="@+id/editTextWensday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/sberWatch"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/editTextTuesdayTime"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:text="Среда"/>
+    <TextView
+        android:id="@+id/editTextWensdayTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/editTextTuesdayTime"
+        android:textSize="18sp"
+        android:text="10:00-19:00"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/editTextThursday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/sberWatch"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/editTextWensdayTime"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:text="Четверг"/>
+    <TextView
+        android:id="@+id/editTextThursdayTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/editTextWensdayTime"
+        android:textSize="18sp"
+        android:text="10:00-19:00"
+        android:layout_margin="10dp"/>
+
+
+    <TextView
+        android:id="@+id/editTextFriday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/sberWatch"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/editTextThursdayTime"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:text="Пятница"/>
+    <TextView
+        android:id="@+id/editTextFridayTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/editTextThursdayTime"
+        android:textSize="18sp"
+        android:text="10:00-19:00"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/editTextSaturday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/sberWatch"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/editTextFridayTime"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:text="Суббота"/>
+    <TextView
+        android:id="@+id/editTextSaturdayTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/editTextFridayTime"
+        android:textSize="18sp"
+        android:text="Закрыто"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/editTextSunday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/sberWatch"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/editTextSaturdayTime"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:text="Воскресенье"/>
+    <TextView
+        android:id="@+id/editTextSundayTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/editTextSaturdayTime"
+        android:textSize="18sp"
+        android:text="Закрыто"
+        android:layout_margin="10dp"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/editTextSunday"
+        android:background="@drawable/shape_borders"/>
+    <?xml version="1.0" encoding="utf-8"?>
+
+
+    <ImageView
+        android:id="@+id/sberWatch2"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:src="@drawable/sber"
+        android:clickable="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/editTextSunday"
+        />
+    <TextView
+        android:id="@+id/editTextPhoneLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/sberSmile"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/editTextSunday"
+        android:textSize="10sp"
+        android:text="Телефон для справки"/>
+    <TextView
+        android:id="@+id/editTextPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/sberSmile"
+        android:layout_below="@id/editTextPhoneLabel"
+        android:textSize="18sp"
+        android:text="+7(800)-555-35-35"/>
+
+
 </RelativeLayout>
