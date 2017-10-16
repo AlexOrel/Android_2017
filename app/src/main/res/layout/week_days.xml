@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="940dp"
-    android:layout_marginTop="60dp">
+    android:paddingTop="60dp">
 
 
     <View
@@ -17,7 +17,6 @@
         android:layout_height="50dp"
         android:layout_width="50dp"
         android:src="@drawable/sber"
-        android:clickable="true"
         android:layout_alignParentLeft="true"
         />
     <TextView
@@ -42,7 +41,6 @@
         android:layout_width="50dp"
         android:layout_below="@id/editTextState"
         android:src="@drawable/sber"
-        android:clickable="true"
         android:layout_alignParentLeft="true"
         />
 
@@ -207,7 +205,6 @@
         android:layout_height="50dp"
         android:layout_width="50dp"
         android:src="@drawable/sber"
-        android:clickable="true"
         android:layout_alignParentLeft="true"
         android:layout_below="@id/editTextSunday"
         />
@@ -228,6 +225,15 @@
         android:layout_below="@id/editTextPhoneLabel"
         android:textSize="18sp"
         android:text="+7(800)-555-35-35"/>
+    <ImageView
+        android:id="@+id/phoneImage"
+        android:layout_height="40dp"
+        android:layout_width="40dp"
+        android:src="@drawable/phone"
+        android:clickable="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/editTextSunday"
+        />
 
 
 </RelativeLayout>

@@ -7,8 +7,8 @@
     tools:context="com.example.orlov.helloworld.MainActivity">
 
 
-    <include layout="@layout/my_layout" />
-    <include layout="@layout/relative_layout" />
+    <include layout="@layout/detail_info" />
+    <include layout="@layout/week_days" />
 
 
 </android.support.constraint.ConstraintLayout>
