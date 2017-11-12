@@ -4,13 +4,6 @@
     android:paddingTop="60dp">
 
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-         android:layout_below="@id/editTextState"
-        android:background="@drawable/shape_borders"/>
-    <?xml version="1.0" encoding="utf-8"?>
-
 
     <ImageView
         android:id="@+id/sberSmile"
@@ -35,6 +28,12 @@
         android:layout_below="@id/editTextStateLabel"
         android:textSize="18sp"
         android:text="Работает"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/editTextState"
+        android:background="@drawable/shape_borders"/>
     <ImageView
         android:id="@+id/sberWatch"
         android:layout_height="50dp"
@@ -197,7 +196,6 @@
         android:layout_height="2dp"
         android:layout_below="@id/editTextSunday"
         android:background="@drawable/shape_borders"/>
-    <?xml version="1.0" encoding="utf-8"?>
 
 
     <ImageView
